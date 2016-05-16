@@ -51,6 +51,7 @@
 		059D9CE31CE96F3A00D2D557 /* TourmalineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TourmalineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		059D9CE71CE96F3A00D2D557 /* TourmalineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TourmalineUITests.m; sourceTree = "<group>"; };
 		059D9CE91CE96F3A00D2D557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		059D9CFE1CE9719E00D2D557 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +153,7 @@
 		059D9CF51CE9705F00D2D557 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				059D9CFE1CE9719E00D2D557 /* PrefixHeader.pch */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -487,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Tourmaline/Config/PrefixHeader.pch;
 				INFOPLIST_FILE = Tourmaline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dongan.Tourmaline;
@@ -498,6 +501,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Tourmaline/Config/PrefixHeader.pch;
 				INFOPLIST_FILE = Tourmaline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dongan.Tourmaline;
