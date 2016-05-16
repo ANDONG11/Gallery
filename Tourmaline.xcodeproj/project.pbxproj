@@ -101,6 +101,15 @@
 		059D9CC11CE96F3A00D2D557 /* Tourmaline */ = {
 			isa = PBXGroup;
 			children = (
+				059D9CF51CE9705F00D2D557 /* Config */,
+				059D9CF61CE9705F00D2D557 /* Model */,
+				059D9CF71CE9705F00D2D557 /* Request */,
+				059D9CF81CE9705F00D2D557 /* Resource */,
+				059D9CF91CE9705F00D2D557 /* Tools */,
+				059D9CFA1CE9705F00D2D557 /* Utils */,
+				059D9CFB1CE9705F00D2D557 /* Vender */,
+				059D9CFC1CE9705F00D2D557 /* ViewController */,
+				059D9CFD1CE9705F00D2D557 /* ViewModel */,
 				059D9CC51CE96F3A00D2D557 /* AppDelegate.h */,
 				059D9CC61CE96F3A00D2D557 /* AppDelegate.m */,
 				059D9CC81CE96F3A00D2D557 /* ViewController.h */,
@@ -108,7 +117,6 @@
 				059D9CCB1CE96F3A00D2D557 /* Main.storyboard */,
 				059D9CCE1CE96F3A00D2D557 /* Assets.xcassets */,
 				059D9CD01CE96F3A00D2D557 /* LaunchScreen.storyboard */,
-				059D9CD31CE96F3A00D2D557 /* Info.plist */,
 				059D9CC21CE96F3A00D2D557 /* Supporting Files */,
 			);
 			path = Tourmaline;
@@ -117,6 +125,7 @@
 		059D9CC21CE96F3A00D2D557 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				059D9CD31CE96F3A00D2D557 /* Info.plist */,
 				059D9CC31CE96F3A00D2D557 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +147,69 @@
 				059D9CE91CE96F3A00D2D557 /* Info.plist */,
 			);
 			path = TourmalineUITests;
+			sourceTree = "<group>";
+		};
+		059D9CF51CE9705F00D2D557 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		059D9CF61CE9705F00D2D557 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		059D9CF71CE9705F00D2D557 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		059D9CF81CE9705F00D2D557 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		059D9CF91CE9705F00D2D557 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		059D9CFA1CE9705F00D2D557 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		059D9CFB1CE9705F00D2D557 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		059D9CFC1CE9705F00D2D557 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		059D9CFD1CE9705F00D2D557 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -498,6 +570,7 @@
 				059D9CEE1CE96F3A00D2D557 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		059D9CEF1CE96F3A00D2D557 /* Build configuration list for PBXNativeTarget "TourmalineTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +579,7 @@
 				059D9CF11CE96F3A00D2D557 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		059D9CF21CE96F3A00D2D557 /* Build configuration list for PBXNativeTarget "TourmalineUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +588,7 @@
 				059D9CF41CE96F3A00D2D557 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
