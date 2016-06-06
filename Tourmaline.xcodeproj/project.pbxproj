@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		053A51B71D053CC400955242 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053A51B61D053CC400955242 /* BaseViewController.m */; };
 		059D9CC41CE96F3A00D2D557 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D9CC31CE96F3A00D2D557 /* main.m */; };
 		059D9CC71CE96F3A00D2D557 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D9CC61CE96F3A00D2D557 /* AppDelegate.m */; };
 		059D9CCA1CE96F3A00D2D557 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D9CC91CE96F3A00D2D557 /* ViewController.m */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		053A51B51D053CC400955242 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		053A51B61D053CC400955242 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		053A51B81D0540B600955242 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		059D9CBF1CE96F3A00D2D557 /* Tourmaline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tourmaline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		059D9CC31CE96F3A00D2D557 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		059D9CC51CE96F3A00D2D557 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				059D9CFE1CE9719E00D2D557 /* PrefixHeader.pch */,
+				053A51B81D0540B600955242 /* Config.h */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -203,6 +208,8 @@
 		059D9CFC1CE9705F00D2D557 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				053A51B51D053CC400955242 /* BaseViewController.h */,
+				053A51B61D053CC400955242 /* BaseViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -345,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				059D9CCA1CE96F3A00D2D557 /* ViewController.m in Sources */,
+				053A51B71D053CC400955242 /* BaseViewController.m in Sources */,
 				059D9CC71CE96F3A00D2D557 /* AppDelegate.m in Sources */,
 				059D9CC41CE96F3A00D2D557 /* main.m in Sources */,
 			);
