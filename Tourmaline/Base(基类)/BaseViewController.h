@@ -70,19 +70,6 @@ typedef void (^footerRefreshingBlock)();
 
 
 /**
- 提示
-
- @param text 文字
- @param isHidden 显示完是否隐藏
- */
-- (void) promptHudViewWithText:(NSString *)text isHidden:(BOOL)isHidden;
-
-/**
- 隐藏提示
- */
-- (void)promptHudViewHide;
-
-/**
  刷新
 
  @param tableView 需要刷新的控件 tableview collectionview
