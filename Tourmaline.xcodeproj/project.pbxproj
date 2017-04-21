@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		053A51B71D053CC400955242 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053A51B61D053CC400955242 /* BaseViewController.m */; };
 		059D9CC41CE96F3A00D2D557 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D9CC31CE96F3A00D2D557 /* main.m */; };
 		059D9CC71CE96F3A00D2D557 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D9CC61CE96F3A00D2D557 /* AppDelegate.m */; };
 		059D9CCA1CE96F3A00D2D557 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D9CC91CE96F3A00D2D557 /* ViewController.m */; };
@@ -16,6 +15,11 @@
 		059D9CD21CE96F3A00D2D557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 059D9CD01CE96F3A00D2D557 /* LaunchScreen.storyboard */; };
 		059D9CDD1CE96F3A00D2D557 /* TourmalineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D9CDC1CE96F3A00D2D557 /* TourmalineTests.m */; };
 		059D9CE81CE96F3A00D2D557 /* TourmalineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 059D9CE71CE96F3A00D2D557 /* TourmalineUITests.m */; };
+		76FD9F911EA9F3CA0064B2AB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FD9F901EA9F3CA0064B2AB /* BaseViewController.m */; };
+		76FD9F971EA9F5C50064B2AB /* ViewModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FD9F961EA9F5C50064B2AB /* ViewModelClass.m */; };
+		76FD9F9D1EA9F85E0064B2AB /* DataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FD9F9A1EA9F85E0064B2AB /* DataRequest.m */; };
+		76FD9F9E1EA9F85E0064B2AB /* NetRequestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FD9F9C1EA9F85E0064B2AB /* NetRequestClass.m */; };
+		ED9E664AA832AAF1B0D9FDAC /* libPods-Tourmaline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FCA8F5B324EB8D17F067CE /* libPods-Tourmaline.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		053A51B51D053CC400955242 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		053A51B61D053CC400955242 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		053A51B81D0540B600955242 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		059D9CBF1CE96F3A00D2D557 /* Tourmaline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tourmaline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		059D9CC31CE96F3A00D2D557 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		059D9CC51CE96F3A00D2D557 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,7 +56,19 @@
 		059D9CE31CE96F3A00D2D557 /* TourmalineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TourmalineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		059D9CE71CE96F3A00D2D557 /* TourmalineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TourmalineUITests.m; sourceTree = "<group>"; };
 		059D9CE91CE96F3A00D2D557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		059D9CFE1CE9719E00D2D557 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		106AE4EB6EB21585DA515E1C /* Pods-Tourmaline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourmaline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tourmaline/Pods-Tourmaline.debug.xcconfig"; sourceTree = "<group>"; };
+		26FCA8F5B324EB8D17F067CE /* libPods-Tourmaline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tourmaline.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76FD9F8F1EA9F3CA0064B2AB /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		76FD9F901EA9F3CA0064B2AB /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		76FD9F951EA9F5C50064B2AB /* ViewModelClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModelClass.h; sourceTree = "<group>"; };
+		76FD9F961EA9F5C50064B2AB /* ViewModelClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModelClass.m; sourceTree = "<group>"; };
+		76FD9F991EA9F85E0064B2AB /* DataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataRequest.h; sourceTree = "<group>"; };
+		76FD9F9A1EA9F85E0064B2AB /* DataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataRequest.m; sourceTree = "<group>"; };
+		76FD9F9B1EA9F85E0064B2AB /* NetRequestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetRequestClass.h; sourceTree = "<group>"; };
+		76FD9F9C1EA9F85E0064B2AB /* NetRequestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetRequestClass.m; sourceTree = "<group>"; };
+		76FD9FA01EA9F8880064B2AB /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		76FD9FA11EA9F8880064B2AB /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F27E048031B6140EA4A6EA56 /* Pods-Tourmaline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourmaline.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tourmaline/Pods-Tourmaline.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED9E664AA832AAF1B0D9FDAC /* libPods-Tourmaline.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +104,8 @@
 				059D9CDB1CE96F3A00D2D557 /* TourmalineTests */,
 				059D9CE61CE96F3A00D2D557 /* TourmalineUITests */,
 				059D9CC01CE96F3A00D2D557 /* Products */,
+				E2A7997C0595C906ECAAF717 /* Pods */,
+				A7CC7B6718B1F90F2D5E22D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,15 +122,13 @@
 		059D9CC11CE96F3A00D2D557 /* Tourmaline */ = {
 			isa = PBXGroup;
 			children = (
-				059D9CF51CE9705F00D2D557 /* Config */,
-				059D9CF61CE9705F00D2D557 /* Model */,
-				059D9CF71CE9705F00D2D557 /* Request */,
-				059D9CF81CE9705F00D2D557 /* Resource */,
-				059D9CF91CE9705F00D2D557 /* Tools */,
-				059D9CFA1CE9705F00D2D557 /* Utils */,
-				059D9CFB1CE9705F00D2D557 /* Vender */,
-				059D9CFC1CE9705F00D2D557 /* ViewController */,
-				059D9CFD1CE9705F00D2D557 /* ViewModel */,
+				76FD9FA51EA9F9250064B2AB /* Tools(工具类) */,
+				76FD9FA41EA9F9060064B2AB /* Public(公共类) */,
+				76FD9FA31EA9F8DF0064B2AB /* verder(三方库) */,
+				76FD9FA21EA9F8B10064B2AB /* Model(数据模型) */,
+				76FD9F9F1EA9F8880064B2AB /* Config(配置) */,
+				76FD9F981EA9F85E0064B2AB /* Request(请求) */,
+				76FD9F8B1EA9F3840064B2AB /* Base(基类) */,
 				059D9CC51CE96F3A00D2D557 /* AppDelegate.h */,
 				059D9CC61CE96F3A00D2D557 /* AppDelegate.m */,
 				059D9CC81CE96F3A00D2D557 /* ViewController.h */,
@@ -154,71 +168,80 @@
 			path = TourmalineUITests;
 			sourceTree = "<group>";
 		};
-		059D9CF51CE9705F00D2D557 /* Config */ = {
+		76FD9F8B1EA9F3840064B2AB /* Base(基类) */ = {
 			isa = PBXGroup;
 			children = (
-				059D9CFE1CE9719E00D2D557 /* PrefixHeader.pch */,
-				053A51B81D0540B600955242 /* Config.h */,
+				76FD9F8F1EA9F3CA0064B2AB /* BaseViewController.h */,
+				76FD9F901EA9F3CA0064B2AB /* BaseViewController.m */,
+				76FD9F951EA9F5C50064B2AB /* ViewModelClass.h */,
+				76FD9F961EA9F5C50064B2AB /* ViewModelClass.m */,
 			);
-			path = Config;
+			path = "Base(基类)";
 			sourceTree = "<group>";
 		};
-		059D9CF61CE9705F00D2D557 /* Model */ = {
+		76FD9F981EA9F85E0064B2AB /* Request(请求) */ = {
 			isa = PBXGroup;
 			children = (
+				76FD9F991EA9F85E0064B2AB /* DataRequest.h */,
+				76FD9F9A1EA9F85E0064B2AB /* DataRequest.m */,
+				76FD9F9B1EA9F85E0064B2AB /* NetRequestClass.h */,
+				76FD9F9C1EA9F85E0064B2AB /* NetRequestClass.m */,
 			);
-			path = Model;
+			path = "Request(请求)";
 			sourceTree = "<group>";
 		};
-		059D9CF71CE9705F00D2D557 /* Request */ = {
+		76FD9F9F1EA9F8880064B2AB /* Config(配置) */ = {
 			isa = PBXGroup;
 			children = (
+				76FD9FA01EA9F8880064B2AB /* Config.h */,
+				76FD9FA11EA9F8880064B2AB /* PrefixHeader.pch */,
 			);
-			path = Request;
+			path = "Config(配置)";
 			sourceTree = "<group>";
 		};
-		059D9CF81CE9705F00D2D557 /* Resource */ = {
+		76FD9FA21EA9F8B10064B2AB /* Model(数据模型) */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Resource;
+			path = "Model(数据模型)";
 			sourceTree = "<group>";
 		};
-		059D9CF91CE9705F00D2D557 /* Tools */ = {
+		76FD9FA31EA9F8DF0064B2AB /* verder(三方库) */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Tools;
+			path = "verder(三方库)";
 			sourceTree = "<group>";
 		};
-		059D9CFA1CE9705F00D2D557 /* Utils */ = {
+		76FD9FA41EA9F9060064B2AB /* Public(公共类) */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Utils;
+			path = "Public(公共类)";
 			sourceTree = "<group>";
 		};
-		059D9CFB1CE9705F00D2D557 /* Vender */ = {
+		76FD9FA51EA9F9250064B2AB /* Tools(工具类) */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Vender;
+			path = "Tools(工具类)";
 			sourceTree = "<group>";
 		};
-		059D9CFC1CE9705F00D2D557 /* ViewController */ = {
+		A7CC7B6718B1F90F2D5E22D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				053A51B51D053CC400955242 /* BaseViewController.h */,
-				053A51B61D053CC400955242 /* BaseViewController.m */,
+				26FCA8F5B324EB8D17F067CE /* libPods-Tourmaline.a */,
 			);
-			path = ViewController;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		059D9CFD1CE9705F00D2D557 /* ViewModel */ = {
+		E2A7997C0595C906ECAAF717 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				106AE4EB6EB21585DA515E1C /* Pods-Tourmaline.debug.xcconfig */,
+				F27E048031B6140EA4A6EA56 /* Pods-Tourmaline.release.xcconfig */,
 			);
-			path = ViewModel;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +251,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 059D9CEC1CE96F3A00D2D557 /* Build configuration list for PBXNativeTarget "Tourmaline" */;
 			buildPhases = (
+				F596606319EDD90A62A73416 /* [CP] Check Pods Manifest.lock */,
 				059D9CBB1CE96F3A00D2D557 /* Sources */,
 				059D9CBC1CE96F3A00D2D557 /* Frameworks */,
 				059D9CBD1CE96F3A00D2D557 /* Resources */,
+				B99EE9AF975AE8E2F57DEE6A /* [CP] Embed Pods Frameworks */,
+				0CE1AF05836A22CE2F85271A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,6 +314,7 @@
 				TargetAttributes = {
 					059D9CBE1CE96F3A00D2D557 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 339DUDKSZG;
 					};
 					059D9CD71CE96F3A00D2D557 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -346,15 +373,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CE1AF05836A22CE2F85271A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tourmaline/Pods-Tourmaline-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B99EE9AF975AE8E2F57DEE6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tourmaline/Pods-Tourmaline-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F596606319EDD90A62A73416 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		059D9CBB1CE96F3A00D2D557 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				059D9CCA1CE96F3A00D2D557 /* ViewController.m in Sources */,
-				053A51B71D053CC400955242 /* BaseViewController.m in Sources */,
+				76FD9F971EA9F5C50064B2AB /* ViewModelClass.m in Sources */,
+				76FD9F911EA9F3CA0064B2AB /* BaseViewController.m in Sources */,
 				059D9CC71CE96F3A00D2D557 /* AppDelegate.m in Sources */,
 				059D9CC41CE96F3A00D2D557 /* main.m in Sources */,
+				76FD9F9D1EA9F85E0064B2AB /* DataRequest.m in Sources */,
+				76FD9F9E1EA9F85E0064B2AB /* NetRequestClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,10 +573,13 @@
 		};
 		059D9CED1CE96F3A00D2D557 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 106AE4EB6EB21585DA515E1C /* Pods-Tourmaline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = Tourmaline/Config/PrefixHeader.pch;
+				DEVELOPMENT_TEAM = 339DUDKSZG;
+				GCC_PREFIX_HEADER = "Tourmaline/Config(配置)/PrefixHeader.pch";
 				INFOPLIST_FILE = Tourmaline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dongan.Tourmaline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,10 +588,13 @@
 		};
 		059D9CEE1CE96F3A00D2D557 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F27E048031B6140EA4A6EA56 /* Pods-Tourmaline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = Tourmaline/Config/PrefixHeader.pch;
+				DEVELOPMENT_TEAM = 339DUDKSZG;
+				GCC_PREFIX_HEADER = "Tourmaline/Config(配置)/PrefixHeader.pch";
 				INFOPLIST_FILE = Tourmaline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dongan.Tourmaline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
