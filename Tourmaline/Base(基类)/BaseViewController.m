@@ -47,12 +47,14 @@
 #pragma mark - navigationBar button left
 - (void)showLeftNavBtnWithClick:(leftNavigationClickBlock)leftClickBlock {
   
+  [self leftNavigationBtn];
   self.leftNavBlock = leftClickBlock;
 }
 
 #pragma mark - navigationBar button right
 - (void)showRightNavBtnWithClick:(rightNavigationClickBlock)rightClickBlock {
   
+  [self rightNavigationBtn];
   self.rightNavBlock = rightClickBlock;
 }
 
