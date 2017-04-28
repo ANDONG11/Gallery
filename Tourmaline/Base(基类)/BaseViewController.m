@@ -46,31 +46,13 @@
 
 #pragma mark - navigationBar button left
 - (void)showLeftNavBtnWithClick:(leftNavigationClickBlock)leftClickBlock {
-  self.leftNavigationBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-  [self.leftNavigationBtn setFrame:CGRectMake(ZERO, ZERO, BASEHEIGHT, BASEHEIGHT)];
-  [self.leftNavigationBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
-  [self.leftNavigationBtn setImage:[UIImage imageNamed:@"nav_button_left_back_default"] forState:UIControlStateNormal];
-  [self.leftNavigationBtn setImage:[UIImage imageNamed:@"nav_button_left_back_pressed"] forState:UIControlStateHighlighted];
-  [self.leftNavigationBtn addTarget:self
-                             action:@selector(leftNavigationBtnClick:)
-                   forControlEvents:UIControlEventTouchUpInside];
-  UIBarButtonItem *leftBtnItem = [[UIBarButtonItem alloc] initWithCustomView:self.leftNavigationBtn];
-  self.navigationItem.leftBarButtonItem = leftBtnItem;
+  
   self.leftNavBlock = leftClickBlock;
 }
 
 #pragma mark - navigationBar button right
 - (void)showRightNavBtnWithClick:(rightNavigationClickBlock)rightClickBlock {
-  self.rightNavigationBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-  [self.rightNavigationBtn setFrame:CGRectMake(ZERO, ZERO, BASEHEIGHT, BASEHEIGHT)];
-  [self.rightNavigationBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
-  [self.rightNavigationBtn addTarget:self
-                              action:@selector(rightNavigationBtnClick:)
-                    forControlEvents:UIControlEventTouchUpInside];
-  [self.rightNavigationBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-  [[self.rightNavigationBtn titleLabel] setFont:ADFont(16.f)];
-  UIBarButtonItem *rightBtnItem = [[UIBarButtonItem alloc] initWithCustomView:self.rightNavigationBtn];
-  self.navigationItem.rightBarButtonItem = rightBtnItem;
+  
   self.rightNavBlock = rightClickBlock;
 }
 
@@ -187,7 +169,37 @@
   return _dataRequest;
 }
 
+-(UIButton *)leftNavigationBtn {
+  if (!_leftNavigationBtn) {
+    _leftNavigationBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_leftNavigationBtn setFrame:CGRectMake(ZERO, ZERO, BASEHEIGHT, BASEHEIGHT)];
+    [_leftNavigationBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    [_leftNavigationBtn setImage:[UIImage imageNamed:@"nav_button_left_back_default"] forState:UIControlStateNormal];
+    [_leftNavigationBtn setImage:[UIImage imageNamed:@"nav_button_left_back_pressed"] forState:UIControlStateHighlighted];
+    [_leftNavigationBtn addTarget:self
+                           action:@selector(leftNavigationBtnClick:)
+                 forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *leftBtnItem = [[UIBarButtonItem alloc] initWithCustomView:_leftNavigationBtn];
+    self.navigationItem.leftBarButtonItem = leftBtnItem;
+  }
+  return _leftNavigationBtn;
+}
 
+-(UIButton *)rightNavigationBtn {
+  if (!_rightNavigationBtn) {
+    _rightNavigationBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_rightNavigationBtn setFrame:CGRectMake(ZERO, ZERO, BASEHEIGHT, BASEHEIGHT)];
+    [_rightNavigationBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
+    [_rightNavigationBtn addTarget:self
+                            action:@selector(rightNavigationBtnClick:)
+                  forControlEvents:UIControlEventTouchUpInside];
+    [_rightNavigationBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [[_rightNavigationBtn titleLabel] setFont:ADFont(16.f)];
+    UIBarButtonItem *rightBtnItem = [[UIBarButtonItem alloc] initWithCustomView:_rightNavigationBtn];
+    self.navigationItem.rightBarButtonItem = rightBtnItem;
+  }
+  return _rightNavigationBtn;
+}
 
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];

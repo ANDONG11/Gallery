@@ -20,15 +20,19 @@
 
   // 所有controller都用继承BaseViewController 
   self.navigationItem.title = @"登录";
+  [self.rightNavigationBtn setTitle:@"right" forState:UIControlStateNormal];
   [self showRightNavBtnWithClick:^(id sender) {
     NSLog(@"right click");
   }];
-  [self.rightNavigationBtn setTitle:@"right" forState:UIControlStateNormal];
   
+
   DefineWeakSelf;
   [self.tableView setRowHeight:60];
   [self tableViewHeaderRefreshWithTableView:self.tableView headerClickBlock:^{
     [weakSelf tableViewEndRefreshingWithNewCount:ZERO];
+  }];
+  [self tableViewFooterRefreshWithTableView:self.tableView footerClickBlock:^{
+    
   }];
   
   // 请求数据
