@@ -10,10 +10,10 @@
 
 @interface ViewModelClass : NSObject
 
-@property (strong, nonatomic) ReturnValueBlock  returnBlock;
-@property (strong, nonatomic) ErrorCodeBlock    errorBlock;
-@property (strong, nonatomic) FailureBlock      failureBlock;
-@property (strong, nonatomic) ProgressBlock     progressBlock;
+@property (copy, nonatomic) ReturnValueBlock  returnBlock;
+@property (copy, nonatomic) ErrorCodeBlock    errorBlock;
+@property (copy, nonatomic) FailureBlock      failureBlock;
+@property (copy, nonatomic) ProgressBlock     progressBlock;
 
 
 //获取网络的链接状态
